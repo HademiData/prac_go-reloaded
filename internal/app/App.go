@@ -1,4 +1,4 @@
-package processors
+package app
 
 import (
 	"fmt"
@@ -11,7 +11,7 @@ func App() {
 
 	// First read file to string and handle errors
 
-		// Checking for Correct Number of Arguments
+	// Checking for Correct Number of Arguments
 	if len(os.Args) != 3 {
 		log.Fatal("Invalid Number of Arguments, Expected 2 arguments corresponding to input/output file names")
 	}
