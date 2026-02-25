@@ -8,7 +8,7 @@ import (
 )
 
 func ReplaceHexAndBin(text string) string {
-	
+
 	words := strings.Fields(text)
 	fmt.Println(words)
 
@@ -16,6 +16,15 @@ func ReplaceHexAndBin(text string) string {
 
 		if words[i] == "(hex)" && i > 0 {
 			decimalValue, err := strconv.ParseInt(words[i-1], 16, 64)
+
+			if err == nil {
+				words[i-1] = strconv.FormatInt(decimalValue, 10)
+
+				words[i] = ""
+			}
+		} else if words[i] == "(bin)" && i > 0 {
+
+			decimalValue, err := strconv.ParseInt(words[i-1], 2, 64)
 
 			if err == nil {
 				words[i-1] = strconv.FormatInt(decimalValue, 10)
