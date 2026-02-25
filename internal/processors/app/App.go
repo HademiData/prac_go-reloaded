@@ -4,6 +4,8 @@ import (
 	"fmt"
 	"log"
 	"os"
+
+	"prac_go-reloaded/internal/processors"
 )
 
 func App() {
@@ -26,7 +28,8 @@ func App() {
 		log.Fatal(err.Error())
 	}
 
-	fmt.Println(string(buffer))
+	// fmt.Println(string(buffer))
+	fmt.Println(processors.ReplaceHexAndBin(string(buffer)))
 
 	// Then process the text and Apply transformation
 	// Attempt to create the Output File and Write to it
