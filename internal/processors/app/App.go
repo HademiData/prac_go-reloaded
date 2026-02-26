@@ -9,13 +9,12 @@ import (
 )
 
 func App() {
-	fmt.Println("Hello, World!")
 
 	// First read file to string and handle errors
 
 	// Checking for Correct Number of Arguments
 	if len(os.Args) != 3 {
-		log.Fatal("Invalid Number of Arguments, Expected 2 arguments corresponding to input/output file names")
+		log.Fatal("Invalid Number of files, Expected 2 arguments corresponding to input/output file names")
 	}
 
 	inputFileName := os.Args[1]
