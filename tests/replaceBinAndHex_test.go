@@ -1,25 +1,33 @@
 package main
 
-import "testing"
+import (
+	"prac_go-reloaded/utils/processors"
+	"testing"
+)
 
-// Function must start with "Test" and take *testing.T
 func TestReplaceHexAndBin(t *testing.T) {
+	// Defining a Table of Test Cases
 
-	// Define a "table" of test cases
 	tests := []struct {
 		sample, result string
 	}{
 		{
 			"Simply add 42 (hex) and 10 (bin) and you will see the result is 68.",
-			"Simply add 66  and 2  and you will see the result is 68."},
+			"Simply add 66 and 2 and you will see the result is 68."},
 		{
-			"I am 90 (hex) cars short of becoming 120 (bin) billion rich",
-			"I am 144 cars short of becoming 8 billion rich"},
+
+			"I am 90 (hex) chairs away from becoming 101 (bin) billion dollars richer",
+			"I am 144 chairs away from becoming 5 billion dollars richer"},
 		{
-			"she is 370 (bin) years old",
-			"she is 26 years old"},
+			"She is 110101 (bin) years old",
+			"She is 53 years old"},
 	}
 
 	
-	t.Errorf("Expected , but got ")
+	for _, tc := range tests {
+		output := processors.ReplaceHexAndBin(tc.sample)
+		if output != tc.result {
+			t.Errorf("ReplaceHexAndBin(%s) failed: expected %s, got %s", tc.sample, tc.result, output)
+		}
+	}
 }
