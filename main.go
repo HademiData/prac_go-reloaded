@@ -1,7 +1,7 @@
 package main
 
 import (
-	"prac_go-reloaded/internal/processors/app"
+	"prac_go-reloaded/utils/processors/app"
 )
 
 func main() {

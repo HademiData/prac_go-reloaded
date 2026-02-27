@@ -5,7 +5,7 @@ import (
 	"log"
 	"os"
 
-	"prac_go-reloaded/internal/processors"
+	"prac_go-reloaded/utils/processors"
 )
 
 func App() {
