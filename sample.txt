@@ -1,1 +1,1 @@
-simply add 42 (hex) and 10 (bin) and you will see the result (cap) is 68.
+simply (up) add 42 (hex) and 10 (bin) AND (low) you will see the result (cap 2) is 68.

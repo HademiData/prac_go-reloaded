@@ -12,5 +12,5 @@ func LowerCasing(input string) string {
 }
 
 func isUpper(r rune) bool {
-	return (r <= 'A' && r >= 'Z')
+	return (r >= 'A' && r <= 'Z')
 }

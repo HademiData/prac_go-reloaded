@@ -28,13 +28,17 @@ func App() {
 		log.Fatal(err.Error())
 	}
 
-	// fmt.Println(string(buffer))
+	// fmt.Println(buffer)
+
+	// for i := range buffer {
+	// 	fmt.Println(string(buffer[i]))
+	// }
+
 	text := processors.ReplaceHexAndBin(string(buffer))
 	text = processors.FormatCasing(text)
 	fmt.Println(text)
 
 	// Then process the text and Apply transformation
 	// Attempt to create the Output File and Write to it
-
 
 }

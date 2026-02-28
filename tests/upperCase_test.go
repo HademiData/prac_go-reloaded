@@ -17,8 +17,14 @@ func TestUpperCase(t *testing.T) {
 			"paulina",
 			"PAULINA"},
 		{
+			"1",
+			"1"},
+		{
 			"",
 			""},
+		{
+			"ID_name",
+			"ID_NAME"},
 	}
 
 	for _, tc := range test {
