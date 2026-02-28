@@ -2,6 +2,7 @@ package app
 
 import (
 	//"fmt"
+	"fmt"
 	"log"
 	"os"
 
@@ -30,8 +31,10 @@ func App() {
 	// fmt.Println(string(buffer))
 	text := processors.ReplaceHexAndBin(string(buffer))
 	text = processors.FormatCasing(text)
+	fmt.Println(text)
 
 	// Then process the text and Apply transformation
 	// Attempt to create the Output File and Write to it
+
 
 }
