@@ -26,7 +26,7 @@ func TestLowerCasing(t *testing.T) {
 	for _, tc := range test {
 		output := helperFunctions.LowerCasing(tc.input)
 		if output != tc.result {
-			t.Errorf("LowerCasing(%s) failed : expected %s got %s", tc.input, tc.result, output)
+			t.Errorf("LowerCasing(%s) Failed : Expected %s Got %s", tc.input, tc.result, output)
 		}
 
 	}
