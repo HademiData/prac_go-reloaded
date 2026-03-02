@@ -9,8 +9,8 @@ func TestModifyArticle(t *testing.T) {
 	test := []struct {
 		sample, result string
 	}{
-		{"it was a egg rack that broke, it was the worst of times.",
-			"it was an egg rack that broke, it was the worst of times."},
+		{"it was a egg rack that broke, a hose, a indomie, a orangotan, a umbrella, a amala",
+			"it was an egg rack that broke, an hose, an indomie, an orangotan, an umbrella, an amala"},
 
 		{"There is no greater agony than bearing a untold story inside you.",
 			"There is no greater agony than bearing an untold story inside you."},
