@@ -28,14 +28,15 @@ func App() {
 		log.Fatal(err.Error())
 	}
 
-	// fmt.Println(buffer)
+	fmt.Println(buffer)
 
-	// for i := range buffer {
-	// 	fmt.Println(string(buffer[i]))
-	// }
+	for i := range buffer {
+		fmt.Println(string(buffer[i]))
+	}
 
 	text := processors.ReplaceHexAndBin(string(buffer))
 	text = processors.FormatCasing(text)
+	text = processors.ModifyArticle(text)
 	fmt.Println(text)
 
 	// Then process the text and Apply transformation
