@@ -30,7 +30,6 @@ func FormatCasing(input string) string {
 		}
 
 		// Formatting Casing with Number
-
 		var convertFunc func(string) string
 
 		if words[i] == "(cap," || words[i] == "(up," || words[i] == "(low," {
@@ -81,5 +80,4 @@ func FormatCasing(input string) string {
 	}
 
 	return strings.Join(cleanWords, " ")
-
 }
