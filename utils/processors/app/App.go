@@ -34,8 +34,10 @@ func App() {
 		fmt.Println(string(buffer[i]))
 	}
 
-	text := processors.ReplaceHexAndBin(string(buffer))
+	text:= processors.ReplaceHexAndBin(string(buffer))
 	text = processors.FormatCasing(text)
+	text = processors.AdjustPunctuations(text)
+	text = processors.AdjustQuotations(text)
 	text = processors.ModifyArticle(text)
 	fmt.Println(text)
 
