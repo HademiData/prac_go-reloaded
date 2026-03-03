@@ -37,6 +37,8 @@ This project was built to practice and improve skills in **Go programming**, **s
 
 ## Project Structure 📁
 
+
+```
 go-reloaded/
 │
 ├── main.go
@@ -71,6 +73,7 @@ go-reloaded/
     ├── replaceBinAndHex_test.go
     └── upperCase_test.go
 
+```
 
 ## Files and Their Functions
 **main.go** – Entry point of the program  
